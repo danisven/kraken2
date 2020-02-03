@@ -600,6 +600,8 @@ taxid_t ClassifySequence(Sequence &dna, Sequence &dna2, ostringstream &koss,
   else
     koss << dna.seq.size() << "|" << dna2.seq.size() << "\t";
 
+  koss << minimizer_hit_groups << "\t";
+
   if (opts.quick_mode) {
     koss << call << ":Q";
   }
